@@ -1,0 +1,8 @@
+ipykernel
+scikit-learn
+pandas
+fastapi
+uvicorn
+seaborn
+httpx
+streamlit
