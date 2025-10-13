@@ -4,6 +4,8 @@ A full-stack machine learning application for predicting Iris flower species usi
 
 ## Project Screenshots
 
+[![Try the app](assets/iris-virginica.jpg)](https://youtu.be/zpMzL2htysQ) 
+
 ### FastAPI- GET
 
 ![GET -FastAPI](assets/Api-get.png "GET- FastAPI")
