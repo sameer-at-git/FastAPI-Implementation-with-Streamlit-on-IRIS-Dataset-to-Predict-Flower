@@ -2,7 +2,7 @@ import streamlit as st
 import httpx
 from constants import ASSETS_PATH
 
-url ="https://fastapi-implementation-with-streamlit-on.onrender.com/docs#/default/predict_flower_api_iris_v1_predict_post"
+url = "https://fastapi-implementation-with-streamlit-on.onrender.com/api/iris/v1/predict"
 
 def predict_flower(payload):
     with httpx.Client(timeout=10) as client:
@@ -10,15 +10,13 @@ def predict_flower(payload):
         response.raise_for_status()
         return response
 
-
 st.markdown("# Iris Flower Prediction App")
 
 with st.form("iris_form"):
-    sepal_length=st.number_input("Sepal Length(cm)", min_value=4.01, max_value=8.49, value=6.0)
-    sepal_width=st.number_input("Sepal Width(cm)", min_value=1.81, max_value=4.99, value=2.5)
-    petal_length=st.number_input("Petal Length(cm)", min_value=0.81, max_value=7.49, value=4.5)
-    petal_width=st.number_input("Petal Width(cm)", min_value=0.01, max_value=2.99, value=1.2)
-
+    sepal_length = st.number_input("Sepal Length(cm)", min_value=4.01, max_value=8.49, value=6.0)
+    sepal_width = st.number_input("Sepal Width(cm)", min_value=1.81, max_value=4.99, value=2.5)
+    petal_length = st.number_input("Petal Length(cm)", min_value=0.81, max_value=7.49, value=4.5)
+    petal_width = st.number_input("Petal Width(cm)", min_value=0.01, max_value=2.99, value=1.2)
     submitted = st.form_submit_button("Predict Flower")
 
 if submitted:
