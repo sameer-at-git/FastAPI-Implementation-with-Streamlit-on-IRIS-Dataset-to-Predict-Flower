@@ -1,0 +1,30 @@
+{
+  version: 2,
+  mediaFileName: 'run-app.mp4',
+  cutSegments: [
+    {
+      start: 0,
+      end: 2.201961,
+      name: '',
+      selected: false,
+    },
+    {
+      start: 2.201961,
+      end: 86.208185,
+      name: '',
+      selected: true,
+    },
+    {
+      start: 86.2636478132417,
+      end: 170.240146,
+      name: '',
+      selected: false,
+    },
+    {
+      start: 170.4044765527795,
+      end: 302.7911933310431,
+      name: '',
+      selected: true,
+    },
+  ],
+}

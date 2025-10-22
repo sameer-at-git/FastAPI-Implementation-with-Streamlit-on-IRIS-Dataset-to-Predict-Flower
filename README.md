@@ -2,6 +2,8 @@
 
 A full-stack machine learning application for predicting Iris flower species using FastAPI backend and Streamlit frontend. This project demonstrates end-to-end ML deployment with a user-friendly interface and RESTful API.
 
+[![Try the app](assets/iris-virginica.jpg)](https://youtu.be/zpMzL2htysQ)
+
 ## Project Screenshots
 
 ### FastAPI- GET

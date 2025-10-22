@@ -2,8 +2,7 @@ import streamlit as st
 import httpx
 from constants import ASSETS_PATH
 
-url = "http://127.0.0.1:8000/api/iris/v1/predict"
-
+url ="https://fastapi-implementation-with-streamlit-on.onrender.com/docs#/default/predict_flower_api_iris_v1_predict_post"
 
 def predict_flower(payload):
     with httpx.Client(timeout=10) as client:
